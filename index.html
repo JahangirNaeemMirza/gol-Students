@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form for Summer Camp 2023</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="my-class" style="font-size: 250%;">Student Registration Form for Summer Camp 2023</h1>
+    <div class="center-wrapper">
+        <form>
+            <table style="box-shadow: 0px,0px,10px black;">
+                <tbody>
+                    <tr>
+                        <td class="tr" style="color: red;">Note: To be eligible, In this Summer Camp the minimum age requirement is that you must be 5 years of age or older</td>
+                    </tr>
+                    <tr>
+                        <td class="tr center-input">
+                            <label for="gender" class="gender-label">Student Gender:</label>
+                            <input list="genders" id="gender" name="gender">
+                            <datalist id="genders">
+                                <option value="Male">
+                                <option value="Female">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tr center-input">
+                            <label for="student-name" class="gender-label">Student Name:</label>
+                            <input type="text" id="student-name" name="student-name" placeholder="e.g John Doe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tr center-input">
+                            <label for="student-age" class="gender-label">Student Age:</label>
+                            <input type="number" id="student-age" name="student-age" placeholder="e.g 13" min="5" max="13">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tr center-input">
+                            <label for="student-name" class="gender-label">Father's Name:</label>
+                            <input type="text" id="student-name" name="student-name" placeholder="e.g John Doe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center-input">
+                            <label class="tr">Student Groups</label>
+                            <br>
+                            <label for="groupA" class="tr">Group A</label>
+                            <input type="radio" id="groupA" name="studentGroup" value="Group A">
+                            <br>
+                            <label for="groupB" class="tr">Group B</label>
+                            <input type="radio" id="groupB" name="studentGroup" value="Group B">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center-input">
+                            <label class="tr">Choose Sports Activities:</label><br>
+                            <input type="checkbox" id="sports-swimming" name="sports-activity" value="Swimming">
+                            <label for="sports-swimming" class="tr">Swimming</label><br>
+
+                            <input type="checkbox" id="sports-football" name="sports-activity" value="Football">
+                            <label for="sports-football" class="tr">Football</label><br>
+
+                            <input type="checkbox" id="sports-cricket" name="sports-activity" value="Cricket">
+                            <label for="sports-cricket" class="tr">Cricket</label><br>
+
+                            <input type="checkbox" id="sports-badminton" name="sports-activity" value="Badminton">
+                            <label for="sports-badminton" class="tr">Badminton</label><br>
+
+                            <input type="checkbox" id="sports-table-tennis" name="sports-activity" value="Table Tennis">
+                            <label for="sports-table-tennis" class="tr">Table Tennis</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center-input">
+                            <label class="tr">Student Email:</label>
+                            <input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center-input">
+                            <label for="phone-number" class="tr">Student Phone:</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="e.g 92333XXXXXX" minlength="10" maxlength="20" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center-input button-row">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear Form">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
